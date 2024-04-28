@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Nova Square', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #aaa;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.wrapper {
+  width: 350px;
+  background-color: #060606;
+  color: #030303;
+  margin: 5rem auto;
+  border-radius: 20px;
+  /* padding: 1px; */
+  padding-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+}
+
+.calc-btn-table {
+  width: 90%;
+  margin: 0 auto;
+  border-spacing: 6px;
+}
+
+#output {
+  text-align: right;
+  font-family: 'Nova Square', sans-serif;
+  padding: 15px 8px;
+  font-size: calc(2.8em - 0.5vw);
+  font-weight: bold;
+  border-radius: 10px;
+  background: #aaa;
+  width: 100%;
+  margin: 20px auto;
+  border: none;
+  outline: none;
+}
+
+#output::placeholder {
+  color: #030303;
+}
+
+.calc-btn-table td {
+  text-align: center;
+  padding: 6px;
+}
+
+.calc-button {
+  background-color: #aaa;
+  color: #030303;
+  border: none;
+  font-size: 20px;
+  font-family: 'Nova Square', sans-serif;
+  height: 55px;
+  width: 55px;
+  border-radius: 40px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* transform: translateY(3px); */
+}
+
+.calc-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.calc-button:hover {
+  background-color: #fff;
+  color: #030303;
+}
+
+#equalsButton {
+  background-color: #f2830d;
+}
+
+/* .operation-button:hover {
+  background-color: #dfb07e;
+} */
+
+/* #clearButton:hover {
+  background-color: #dfb07e;
+} */
+
+#equalsButton:hover {
+  background-color: #f0b06c;
+}
