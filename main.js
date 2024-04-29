@@ -31,12 +31,18 @@ offButton.addEventListener("click", () => {
     // e.preventDefault;
     console.log("yes, this works");
     document.getElementById("output").value = "";
+    currentNumber = "";
+    previousNumber = null;
+    operation = null;
     disableNumberPadButtons();
 })
 
 onButton.addEventListener("click", () => {
     console.log("yeah, it came on");
     document.getElementById("output").value = 0;
+    currentNumber = "";
+    previousNumber = null;
+    operation = null;
     enableNumberPadButtons();
 })
 
