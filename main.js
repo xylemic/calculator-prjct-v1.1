@@ -67,18 +67,6 @@ function handleClear() {
 }
 
 function calculate() {
-    
-
-
-    function handleOperation(op) {
-        // Always reset currentNumber before storing the previous number
-        currentNumber = ""; 
-        if (previousNumber !== null) {
-          calculate(); // Perform calculation if there's a previous number and operation
-        }
-        previousNumber = parseFloat(currentNumber);
-        operation = op;
-      }
 
 
     if (previousNumber === null || currentNumber === "" || operation === null) return;
@@ -102,7 +90,8 @@ function calculate() {
             break;
         case "÷":
             if (NUM2 === 0) {
-                alert("Division by zero is not allowed!");
+                // alert("Division by zero is not allowed!");
+                document.getElementById("output").value = "Division by zero is not allowed!";
                 return;
             }
             result = NUM1 / NUM2;
@@ -121,11 +110,8 @@ function calculate() {
 
 // This code checks for a previous number and operation upon clicking '='
 if (previousNumber !== null) {
-    calculate(); // Perform calculation if there's a previous number and operation on page load
+    calculate(); 
   }
 
   document.getElementById("output").value = "";
   disableNumberPadButtons();
-  
-
-
